@@ -838,19 +838,29 @@
         <ul class="tip-list" id="final-tips"></ul>
       </div>
       <hr class="divider">
-      <h3 style="font-family:'Lora',serif; font-size:17px; margin-bottom:12px; color:var(--navy);">What to do next</h3>
+      <h3 style="font-family:'Lora',serif; font-size:17px; margin-bottom:6px; color:var(--navy);">There's more on this site - explore the other tabs</h3>
+      <p style="font-size:14px; color:var(--text-muted); margin-bottom:16px; line-height:1.65;">Your phishing training is complete, but this tool covers two other areas that are just as important for a healthy, safe church community.</p>
       <div class="resource-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
-        <div class="resource-card" style="cursor:pointer;" onclick="showSection('checklist')">
-          <div class="resource-icon" style="background:#1a4f6e;">&#9989;</div>
-          <div><div class="resource-name">Cyber safety checklist</div><div class="resource-desc">Work through our church-specific security checklist</div></div>
-        </div>
-        <div class="resource-card" style="cursor:pointer;" onclick="showSection('congregation')">
+        <div class="resource-card" style="cursor:pointer; border-color: var(--gold);" onclick="showSection('congregation')">
           <div class="resource-icon" style="background:#2d6a4f;">&#128101;</div>
-          <div><div class="resource-name">Protect your congregation</div><div class="resource-desc">Help vulnerable members recognise phone and email scams</div></div>
+          <div>
+            <div class="resource-name">Protecting your congregation</div>
+            <div class="resource-desc">Phone scams, romance fraud, investment scams, and AI voice cloning - practical guidance for helping vulnerable members of your community.</div>
+          </div>
+        </div>
+        <div class="resource-card" style="cursor:pointer; border-color: var(--gold);" onclick="showSection('checklist')">
+          <div class="resource-icon" style="background:#1a4f6e;">&#9989;</div>
+          <div>
+            <div class="resource-name">Cyber safety checklist</div>
+            <div class="resource-desc">20 practical steps covering email, accounts, financial controls, and culture. Work through it with your leadership team.</div>
+          </div>
         </div>
         <div class="resource-card" style="cursor:pointer;" onclick="showSection('resources')">
           <div class="resource-icon" style="background:var(--navy);">&#128279;</div>
-          <div><div class="resource-name">Report a scam</div><div class="resource-desc">Links to NZ reporting agencies and learning resources</div></div>
+          <div>
+            <div class="resource-name">Report a scam &amp; find help</div>
+            <div class="resource-desc">NZ reporting agencies, free learning resources, and links to Netsafe, CERT NZ, Police, and the FMA.</div>
+          </div>
         </div>
       </div>
       <div class="btn-row" style="margin-top:20px;">
@@ -1203,7 +1213,7 @@ const denomData = {
   anglican: {
     label: "Anglican Church Aotearoa NZ",
     domains: ["anglican.org.nz","anglicanlife.org.nz","dioceseofauckland.org.nz","christchurchcathedral.co.nz"],
-    fakeDomains: ["angIican.org.nz","anglican-nz.net","anglicanlife-portal.com","diocese-auckland.org"],
+    fakeDomains: ["anglicannz.net","anglican-nz.net","anglicanlife-portal.com","diocese-auckland.org"],
     leaderTitle: "Bishop",
     orgType: "Diocese",
     systemName: "Anglican portal",
@@ -1212,7 +1222,7 @@ const denomData = {
   catholic: {
     label: "Roman Catholic",
     domains: ["catholic.org.nz","aucklandcatholic.org.nz","wellingtonarchdiocese.org.nz"],
-    fakeDomains: ["cath0lic.org.nz","nz-catholic.net","aucklandcath0lic.org"],
+    fakeDomains: ["catholicnz.net","nz-catholic.net","auckland-catholic.org"],
     leaderTitle: "Bishop / Archbishop",
     orgType: "Diocese",
     systemName: "parish management system",
@@ -1230,7 +1240,7 @@ const denomData = {
   methodist: {
     label: "Methodist Church of NZ",
     domains: ["methodist.org.nz","wesleycommunitychurch.org.nz"],
-    fakeDomains: ["meth0dist.org.nz","methodist-nz.net","mcnz-portal.com"],
+    fakeDomains: ["methodistnz.net","methodist-nz.net","mcnz-portal.com"],
     leaderTitle: "Superintendent Minister",
     orgType: "District",
     systemName: "Methodist Connect",
@@ -1239,7 +1249,7 @@ const denomData = {
   baptist: {
     label: "Baptist Churches of NZ",
     domains: ["baptist.org.nz","bcnz.ac.nz"],
-    fakeDomains: ["bapt1st.org.nz","baptist-nz.net","bcnz-login.com"],
+    fakeDomains: ["baptistnz.net","baptist-nz.net","bcnz-login.com"],
     leaderTitle: "Senior Pastor",
     orgType: "Association",
     systemName: "church management system",
@@ -1248,7 +1258,7 @@ const denomData = {
   salvation: {
     label: "Salvation Army NZ",
     domains: ["salvationarmy.org.nz","salvos.org.nz"],
-    fakeDomains: ["salvati0narmy.org.nz","salvationarmy-nz.net","salvos-portal.com"],
+    fakeDomains: ["salvationarmynz.net","salvationarmy-nz.net","salvos-portal.com"],
     leaderTitle: "Divisional Commander",
     orgType: "Division",
     systemName: "Salvation Army portal",
@@ -1266,7 +1276,7 @@ const denomData = {
   lutheran: {
     label: "Lutheran Church of NZ",
     domains: ["lutheran.org.nz"],
-    fakeDomains: ["Iutheran.org.nz","lutheran-nz.net","lcnz-portal.com"],
+    fakeDomains: ["lutherannz.net","lutheran-nz.net","lcnz-portal.com"],
     leaderTitle: "Bishop",
     orgType: "Synod",
     systemName: "Lutheran portal",
@@ -1284,7 +1294,7 @@ const denomData = {
   adventist: {
     label: "Seventh-day Adventist",
     domains: ["adventist.org.nz","npuc.org.nz"],
-    fakeDomains: ["advent1st.org.nz","sda-nz.net","adventist-nz-portal.com"],
+    fakeDomains: ["adventistnz.net","sda-nz.net","adventist-nz-portal.com"],
     leaderTitle: "Conference President",
     orgType: "Conference",
     systemName: "Adventist Connect",
@@ -1317,7 +1327,10 @@ let state = {
   denom: null, orgName: '', leaderName: '', userRole: '',
   currentQ: 0, score: 0, answers: [],
   weakAreas: [], modules: [], currentModule: 0,
-  currentStep: 0, stepStage: 'read', quizAnswered: false
+  currentStep: 0, stepStage: 'read', quizAnswered: false,
+  // Tracks which variant index was used last for each question category
+  // so retakes always get a different question
+  lastVariant: {}
 };
 
 // ============================================================
@@ -1353,6 +1366,16 @@ function startAssessment() {
 }
 
 function restartAssessment() {
+  // Advance variant index for any question the user got wrong last time
+  // so they see a fresh question on retake
+  const categories = ['sender-spoofing','ai-personalisation','urgency','link-inspection','deepfake-voice','reporting'];
+  categories.forEach(cat => {
+    const wasWrong = state.answers.find(a => a.id === cat && !a.correct);
+    if (wasWrong) {
+      const bankLen = getQuestionBank()[cat].length;
+      state.lastVariant[cat] = ((state.lastVariant[cat] || 0) + 1) % bankLen;
+    }
+  });
   state.currentQ = 0; state.score = 0; state.answers = [];
   state.weakAreas = []; state.modules = []; state.currentModule = 0;
   state.currentStep = 0; state.stepStage = 'read';
@@ -1368,100 +1391,327 @@ function showAppScreen(id) {
 // ============================================================
 // QUESTIONS (denomination-aware)
 // ============================================================
-function getQuestions() {
+
+// Helper: turn a full name like "Rev. Sarah Mitchell" or "Bishop Jim White"
+// into a valid email-safe local part: "sarah.mitchell" or "j.white"
+function nameToEmail(fullName) {
+  // Strip honorifics
+  const stripped = fullName.replace(/^(Rev\.?|Bishop|Senior Pastor|Pastor|Superintendent Minister|Minister|Divisional Commander|Conference President|Senior Leader|Elder|Dr\.?|Sr\.?)\s+/i, '').trim();
+  const parts = stripped.split(/\s+/).filter(Boolean);
+  if (parts.length === 0) return 'admin';
+  if (parts.length === 1) return parts[0].toLowerCase();
+  // firstname.lastname
+  return (parts[0] + '.' + parts[parts.length - 1]).toLowerCase();
+}
+
+// Helper: return the current variant index for a category (0 on first run)
+function variantFor(cat) {
+  return state.lastVariant[cat] || 0;
+}
+
+// The full question bank - each category has 3 variants
+// getQuestionBank() is called with denomination context already set in state
+function getQuestionBank() {
   const d = state.denom;
   const org = state.orgName;
   const leader = state.leaderName;
-  const fakeFrom = leader.split(' ').pop().toLowerCase() + '@' + (d.fakeDomains[0] || 'fake-domain.com');
+  const leaderFirst = leader.replace(/^(Rev\.?|Bishop|Pastor|Minister|Elder|Dr\.?)\s+/i,'').split(' ')[0];
+  const leaderEmail = nameToEmail(leader);
   const realDomain = d.domains[0] || 'yourdomain.org.nz';
-  const fakeDomain = d.fakeDomains[0] || 'fake-domain.com';
-  const fakeDomain2 = d.fakeDomains[1] || 'church-portal.net';
+  const fakeDomain0 = d.fakeDomains[0] || 'church-nz.net';
+  const fakeDomain1 = d.fakeDomains[1] || 'nz-church-portal.com';
+  const fakeDomain2 = d.fakeDomains[2] || 'churchportal.net';
+  const fakeFrom0 = leaderEmail + '@' + fakeDomain0;
+  const fakeFrom1 = leaderEmail + '@' + fakeDomain1;
+  const fakeFrom2 = leaderEmail + '@' + fakeDomain2;
 
-  return [
-    {
-      id: 'sender-spoofing',
-      area: 'Sender verification',
-      question: `You receive the following email. What is your first concern?`,
-      email: {
-        from: `${leader} <${fakeFrom}>`,
-        to: 'You',
-        subject: `Urgent request - Prezzy cards needed today`,
-        body: `Hi,\n\nI'm in a meeting and unable to take calls. I need your help urgently - please purchase 4x $100 Prezzy cards from a nearby store and send me the redemption codes as soon as possible.\n\nI will reimburse you by end of day. Please keep this between us for now - I'll explain later.\n\n${leader}`
+  return {
+
+    // ----------------------------------------------------------
+    'sender-spoofing': [
+      // Variant 0 - Prezzy card gift card scam
+      {
+        id: 'sender-spoofing', area: 'Sender verification',
+        question: `You receive the following email. What is your first concern?`,
+        email: {
+          from: `${leader} <${fakeFrom0}>`,
+          to: 'You',
+          subject: `Urgent request - Prezzy cards needed today`,
+          body: `Hi,\n\nI'm in a meeting and unable to take calls. I need your help urgently - please purchase 4x $100 Prezzy cards from a nearby store and send me the redemption codes as soon as possible.\n\nI will reimburse you by end of day. Please keep this between us for now - I'll explain later.\n\n${leader}`
+        },
+        options: [
+          { text: `This is almost certainly a scam - no leader would ask for Prezzy card codes by email`, correct: true },
+          { text: `The email uses ${leader}'s name so it's probably genuine`, correct: false },
+          { text: `I should buy the cards quickly to help`, correct: false },
+          { text: `I should reply asking for more information`, correct: false }
+        ],
+        explanation: `This is a "CEO fraud" scam. Three red flags: (1) the sending domain is <strong>${fakeDomain0}</strong> - not <strong>${realDomain}</strong>; (2) requests for gift card codes are almost always scams - no legitimate leader will ever ask for this by email; (3) "keep this between us" is a manipulation tactic to stop you verifying. Always expand the From field and read the full email address, not just the display name.`
       },
-      options: [
-        { text: `This is almost certainly a scam - no leader would ask for Prezzy card codes by email`, correct: true },
-        { text: `The email uses ${leader}'s name so it's probably genuine`, correct: false },
-        { text: `I should buy the cards quickly in case it's urgent`, correct: false },
-        { text: `I should reply asking for more information`, correct: false }
-      ],
-      explanation: `This is a "CEO fraud" scam. Notice: (1) the sending domain is <strong>${d.fakeDomains[0]}</strong> - not <strong>${realDomain}</strong>; (2) requests for gift card codes are almost always scams - no legitimate leader will ever ask for this; (3) "keep this between us" is a social manipulation tactic to stop you verifying. Always check the full email address (not just the display name), and never send gift card codes by email.`
-    },
-    {
-      id: 'ai-personalisation',
-      area: 'AI-generated personalisation',
-      question: `An AI-assisted phishing attack uses publicly available information to make emails feel personal. Which of these details could an attacker most easily gather about ${org} without any insider access?`,
-      email: null,
-      options: [
-        { text: `Your private email password`, correct: false },
-        { text: `Staff names, roles, and recent events from the church website and Facebook page`, correct: true },
-        { text: `Internal financial records and bank details`, correct: false },
-        { text: `Your home address`, correct: false }
-      ],
-      explanation: `AI phishing tools can scrape your website, Facebook, Instagram, and event listings in seconds. This allows attackers to write emails that mention your name, your ${d.orgType.toLowerCase()}'s recent events, ${leader}'s name, and your role - making them feel personal and trustworthy. Personalisation is no longer a sign of legitimacy.`
-    },
-    {
-      id: 'urgency',
-      area: 'Urgency and pressure tactics',
-      question: `You receive an email claiming to be from ${org}'s bank, saying the account will be frozen in 2 hours unless you click a link to verify your details. What should you do?`,
-      email: null,
-      options: [
-        { text: `Click the link immediately - you can't risk the account being frozen`, correct: false },
-        { text: `Close the email and ring the bank directly using the number on your statement or the bank's official website`, correct: true },
-        { text: `Reply to the email asking for more time`, correct: false },
-        { text: `Forward it to a colleague to deal with`, correct: false }
-      ],
-      explanation: `Artificial urgency is one of the most common phishing tactics. The 2-hour deadline is designed to make you act before you think. Legitimate banks never ask you to click links in emails to verify sensitive account details. Always contact your bank using a number you find yourself - from your card, statement, or the bank's official website. Never use contact details in the suspicious email.`
-    },
-    {
-      id: 'link-inspection',
-      area: 'Link and URL inspection',
-      question: `You receive an email with a "log in to ${d.systemName}" button. Before clicking, you hover over it. Which URL should concern you most?`,
-      email: null,
-      options: [
-        { text: `https://portal.${realDomain}/login`, correct: false },
-        { text: `https://${d.fakeDomains[1] || 'nz-church-portal.weebly.com'}/verify`, correct: true },
-        { text: `https://login.${realDomain}`, correct: false },
-        { text: `https://${realDomain}/account`, correct: false }
-      ],
-      explanation: `The suspicious URL is the second one. The "root domain" is the last word before the first single slash - so <strong>${(d.fakeDomains[1]||'nz-church-portal.weebly.com').split('/')[0]}</strong> is owned by a free site builder, not your church. Attackers create convincing-looking pages on free platforms (Weebly, Wix, Google Sites) or register similar-looking domains. Always check what comes immediately before the first single forward slash.`
-    },
-    {
-      id: 'deepfake-voice',
-      area: 'AI voice cloning',
-      question: `You receive a voicemail that sounds exactly like ${leader}, asking you to transfer $1,500 from the ${d.orgType.toLowerCase()} account for an urgent mission commitment. What should you do?`,
-      email: null,
-      options: [
-        { text: `Transfer the funds - you'd recognise ${leader.split(' ')[0]}'s voice anywhere`, correct: false },
-        { text: `Call ${leader.split(' ')[0]} back on their known number to verify before doing anything`, correct: true },
-        { text: `Email the ${d.groupName} to authorise the transfer`, correct: false },
-        { text: `Transfer half the amount as a compromise`, correct: false }
-      ],
-      explanation: `AI voice cloning tools can replicate a person's voice from as little as 10-30 seconds of audio - which is readily available from recorded services, YouTube sermons, Facebook Live, or podcasts. A convincing voice is no longer proof of identity. For any financial request - no matter how familiar the voice sounds - always hang up and call back on a number you already have saved.`
-    },
-    {
-      id: 'reporting',
-      area: 'Reporting and response',
-      question: `You realise you clicked a suspicious link 30 minutes ago and may have entered your login details. What should you do first?`,
-      email: null,
-      options: [
-        { text: `Say nothing and hope nothing happens`, correct: false },
-        { text: `Delete the email and change your password when you have time`, correct: false },
-        { text: `Immediately change your password, enable two-factor authentication, and tell your IT contact or ${d.groupName}`, correct: true },
-        { text: `Only report it if you notice unusual activity in the next few days`, correct: false }
-      ],
-      explanation: `Speed is critical. Attackers can act within minutes of receiving stolen credentials. Immediately: (1) change your password on the real system; (2) enable two-factor authentication; (3) tell your IT contact or supervisor - even if you feel embarrassed. Your report could protect others in ${org} who may receive the same attack. There is no shame in being targeted - these attacks are engineered by professionals.`
-    }
-  ];
+      // Variant 1 - Invoice redirect scam with spoofed domain
+      {
+        id: 'sender-spoofing', area: 'Sender verification',
+        question: `You receive the following email. What should you do?`,
+        email: {
+          from: `${leader} <${fakeFrom1}>`,
+          to: 'You',
+          subject: `Change of bank account for supplier payments`,
+          body: `Hi,\n\nPlease update our records - our regular supplier has changed their bank account. All future payments should go to:\n\nAccount name: NZ Supply Co\nBank: ANZ\nAccount number: 06-0999-1234567-00\n\nPlease process the outstanding $2,400 invoice to the new account today.\n\nThanks,\n${leader}`
+        },
+        options: [
+          { text: `Update the account and process the payment - it came from ${leaderFirst}`, correct: false },
+          { text: `The sending address doesn't match ${org}'s real domain - verify by calling ${leaderFirst} before changing anything`, correct: true },
+          { text: `Reply to confirm the new account details are correct`, correct: false },
+          { text: `Forward to finance to handle`, correct: false }
+        ],
+        explanation: `This is a "bank account redirection" scam - one of the most costly types targeting NZ organisations. The sending domain <strong>${fakeDomain1}</strong> is not <strong>${realDomain}</strong>. Replying to the email just replies to the attacker. Always verify bank account changes by calling the person on a number you already have - never through email or a number in the email.`
+      },
+      // Variant 2 - Display name spoofing (address looks plausible but wrong)
+      {
+        id: 'sender-spoofing', area: 'Sender verification',
+        question: `You receive the following email. What is the most important thing to check?`,
+        email: {
+          from: `${leader} <${fakeFrom2}>`,
+          to: 'You',
+          subject: `Quick favour while I'm travelling`,
+          body: `Hi,\n\nI'm travelling for a ${d.orgType.toLowerCase()} meeting and my phone isn't working overseas. I need you to process an urgent payment of $3,200 to a visiting speaker before they leave NZ today.\n\nI'll send the account details shortly. Please don't mention this to anyone else yet as it's still being confirmed.\n\nBest,\n${leader}`
+        },
+        options: [
+          { text: `Process the payment - ${leaderFirst} is travelling and clearly needs help urgently`, correct: false },
+          { text: `The sending email address doesn't match ${org}'s real domain - this is very likely a scam`, correct: true },
+          { text: `Wait for the account details before deciding what to do`, correct: false },
+          { text: `Ask a colleague if they've heard from ${leaderFirst} today`, correct: false }
+        ],
+        explanation: `The sending domain <strong>${fakeDomain2}</strong> is not <strong>${realDomain}</strong>. "Don't mention this to anyone" is a classic social engineering tactic - it's designed to prevent you from checking. Real leaders don't ask staff to keep financial transactions secret. Always verify payment requests by calling the person on their known number, regardless of what the email says.`
+      }
+    ],
+
+    // ----------------------------------------------------------
+    'ai-personalisation': [
+      // Variant 0 - What info is publicly available
+      {
+        id: 'ai-personalisation', area: 'AI-generated personalisation',
+        question: `An AI-assisted phishing email arrives mentioning your name, a recent ${org} event, and ${leader}'s name. What does this tell you?`,
+        email: null,
+        options: [
+          { text: `The sender must have insider access to ${org}'s systems`, correct: false },
+          { text: `Nothing - AI can scrape all of this from public sources in seconds`, correct: true },
+          { text: `The email is probably genuine because of the specific detail`, correct: false },
+          { text: `Someone in the ${d.groupName} must have leaked the information`, correct: false }
+        ],
+        explanation: `AI phishing tools can gather names, roles, recent events, and leadership details from your church website, Facebook, event listings, and newsletters in seconds - no insider access needed. Personalisation is no longer a sign of legitimacy. Apply the same scepticism to detailed, personal-feeling emails as you would to generic ones.`
+      },
+      // Variant 1 - Which info is risky to post publicly
+      {
+        id: 'ai-personalisation', area: 'AI-generated personalisation',
+        question: `Which of these on the public ${org} website gives an attacker the most useful material for a convincing phishing email?`,
+        email: null,
+        options: [
+          { text: `Service times and a list of upcoming community events`, correct: false },
+          { text: `A staff page with names, direct email addresses, roles, and a photo of each person`, correct: true },
+          { text: `A general contact form with a single info@ email address`, correct: false },
+          { text: `A news post about a recent community project`, correct: false }
+        ],
+        explanation: `A full staff directory gives attackers exactly what they need: names to impersonate, roles to target (finance staff, the administrator), and direct email addresses to spoof. Consider using a contact form or a single info@ address instead. The goal isn't to hide your church - it's to reduce the detail available to attackers.`
+      },
+      // Variant 2 - Recognising an AI-personalised attack in practice
+      {
+        id: 'ai-personalisation', area: 'AI-generated personalisation',
+        question: `You receive an email that mentions you by name, references last Sunday's ${org} service topic, and asks you to urgently update your login details. How should you treat this?`,
+        email: null,
+        options: [
+          { text: `It's probably legitimate - they know too much to be a scammer`, correct: false },
+          { text: `With the same caution as any other unexpected request - personalisation can be faked using public information`, correct: true },
+          { text: `Reply and ask how they know about the service`, correct: false },
+          { text: `It must be from someone who attended the service`, correct: false }
+        ],
+        explanation: `AI can generate this kind of personalised email from publicly available content - your website, Facebook posts, or livestream titles. The detail feels convincing but costs an attacker almost nothing to produce. Treat any unexpected request involving login details or financial action with the same process: slow down, verify independently, don't click links in the email.`
+      }
+    ],
+
+    // ----------------------------------------------------------
+    'urgency': [
+      // Variant 0 - Bank account frozen
+      {
+        id: 'urgency', area: 'Urgency and pressure tactics',
+        question: `You receive an email claiming to be from ${org}'s bank, saying the account will be frozen in 2 hours unless you click a link to verify your details. What should you do?`,
+        email: null,
+        options: [
+          { text: `Click the link immediately - you can't risk the account being frozen`, correct: false },
+          { text: `Close the email and ring the bank directly using the number on your statement or the bank's official website`, correct: true },
+          { text: `Reply to the email asking for more time`, correct: false },
+          { text: `Forward it to a colleague to deal with`, correct: false }
+        ],
+        explanation: `Artificial urgency is one of the most common phishing tactics. A 2-hour deadline is designed to make you act before you think. Legitimate banks never ask you to click links in emails to verify sensitive account details. Always contact your bank using a number you find yourself - from your card, statement, or their official website. Never use contact details in the suspicious email.`
+      },
+      // Variant 1 - IRD threat of prosecution
+      {
+        id: 'urgency', area: 'Urgency and pressure tactics',
+        question: `You receive an urgent email claiming ${org} owes overdue tax and will face prosecution if payment isn't made within 24 hours via the link provided. What is the right response?`,
+        email: null,
+        options: [
+          { text: `Click the link and pay immediately to avoid prosecution`, correct: false },
+          { text: `Panic - this sounds very serious`, correct: false },
+          { text: `Ignore the email entirely without checking`, correct: false },
+          { text: `Do not click the link - contact IRD directly at ird.govt.nz to check whether any debt is genuine`, correct: true }
+        ],
+        explanation: `IRD never demands immediate payment via links in emails or threatens prosecution this way. This is a government impersonation scam using urgency and fear. Verify any claimed tax debt by going directly to ird.govt.nz or calling 0800 227 774. The 24-hour pressure is designed to stop you thinking clearly - it's a manipulation tactic, not a real deadline.`
+      },
+      // Variant 2 - Microsoft account about to be deleted
+      {
+        id: 'urgency', area: 'Urgency and pressure tactics',
+        question: `An email arrives saying ${org}'s Microsoft 365 account will be permanently deleted in 6 hours due to "unusual activity" unless you verify your password by clicking the link. What do you do?`,
+        email: null,
+        options: [
+          { text: `Click the link quickly - losing the church email accounts would be a disaster`, correct: false },
+          { text: `Open a new browser tab, go directly to office.com, and log in there to check for any real alerts`, correct: true },
+          { text: `Reply to the email asking for more details`, correct: false },
+          { text: `Forward to everyone in the ${d.groupName} so they know what's happening`, correct: false }
+        ],
+        explanation: `Microsoft never deletes accounts by email with a 6-hour warning. This urgency is manufactured to make you click before thinking. Always navigate directly to the service yourself (office.com, myaccount.microsoft.com) rather than following email links. Real account alerts appear when you log in normally - they don't require emergency clicks in emails.`
+      }
+    ],
+
+    // ----------------------------------------------------------
+    'link-inspection': [
+      // Variant 0 - Spot the fake domain
+      {
+        id: 'link-inspection', area: 'Link and URL inspection',
+        question: `You receive an email with a "log in to ${d.systemName}" button. Before clicking, you hover over it. Which URL should concern you most?`,
+        email: null,
+        options: [
+          { text: `https://portal.${realDomain}/login`, correct: false },
+          { text: `https://${fakeDomain1}/verify`, correct: true },
+          { text: `https://login.${realDomain}`, correct: false },
+          { text: `https://${realDomain}/account`, correct: false }
+        ],
+        explanation: `The suspicious URL is the second one. The root domain - the last two parts before the first single forward slash - is <strong>${fakeDomain1}</strong>, which is not owned by your church. Attackers create convincing pages on unrelated domains. Always confirm the root domain matches a genuine church address before entering any login details.`
+      },
+      // Variant 1 - Subdomain trick
+      {
+        id: 'link-inspection', area: 'Link and URL inspection',
+        question: `A link in an email displays as "Update your ${d.systemName} password". When you hover over it you see this URL. Which part tells you whether it's safe?\n\nhttps://${realDomain}.reset-login.com/verify`,
+        email: null,
+        options: [
+          { text: `The "https://" at the start - that means it's secure and trustworthy`, correct: false },
+          { text: `The presence of ${realDomain} in the address - that's a trusted name`, correct: false },
+          { text: `The root domain - "reset-login.com" - which is not owned by ${org}`, correct: true },
+          { text: `The "/verify" path at the end`, correct: false }
+        ],
+        explanation: `Attackers use a classic trick: put a legitimate-looking name as a <em>subdomain</em> so it appears first. The root domain - the last two parts before the first slash - is <strong>reset-login.com</strong>, which is not your church. HTTPS only means the connection is encrypted; it says nothing about who owns the site. Always read from the first single slash backwards to find the real owner.`
+      },
+      // Variant 2 - Shortened / disguised link
+      {
+        id: 'link-inspection', area: 'Link and URL inspection',
+        question: `An email asks you to "click here to confirm your details" using a shortened link: bit.ly/ch3ck-nz. You can't see where it leads. What is the safest option?`,
+        email: null,
+        options: [
+          { text: `Click it - bit.ly links are used by legitimate organisations too`, correct: false },
+          { text: `Don't click it - instead, go directly to the login page you know by typing the address yourself`, correct: true },
+          { text: `Copy and paste the link into a reply email to check with the sender`, correct: false },
+          { text: `Click it quickly on your phone so it's less risky`, correct: false }
+        ],
+        explanation: `Shortened links hide the real destination entirely. Legitimate system notifications from ${org}'s tools will link to their actual domain - not bit.ly or other shorteners. If you ever need to confirm something in a system, navigate directly to it by typing the known address yourself. You can also paste shortened links into a URL expander like checkshorturl.com to preview the destination before clicking.`
+      }
+    ],
+
+    // ----------------------------------------------------------
+    'deepfake-voice': [
+      // Variant 0 - Voicemail from leader requesting transfer
+      {
+        id: 'deepfake-voice', area: 'AI voice cloning',
+        question: `You receive a voicemail that sounds exactly like ${leader}, asking you to transfer $1,500 from the ${d.orgType.toLowerCase()} account for an urgent mission commitment. What should you do?`,
+        email: null,
+        options: [
+          { text: `Transfer the funds - you'd recognise ${leaderFirst}'s voice anywhere`, correct: false },
+          { text: `Call ${leaderFirst} back on their known number to verify before doing anything`, correct: true },
+          { text: `Email the ${d.groupName} to authorise the transfer`, correct: false },
+          { text: `Transfer half the amount as a compromise`, correct: false }
+        ],
+        explanation: `AI voice cloning tools can replicate a person's voice from as little as 10-30 seconds of audio - readily available from recorded services, YouTube sermons, or Facebook Live. A convincing voice is no longer proof of identity. For any financial request - however familiar the voice sounds - always call back on a number you already have saved. Never use a number left in the voicemail.`
+      },
+      // Variant 1 - WhatsApp voice message in group chat
+      {
+        id: 'deepfake-voice', area: 'AI voice cloning',
+        question: `A WhatsApp voice message appears in the ${org} staff group. It sounds like ${leader} asking everyone to urgently send their login credentials to a new IT system. What should you do?`,
+        email: null,
+        options: [
+          { text: `Send your credentials - ${leaderFirst} clearly needs them urgently`, correct: false },
+          { text: `No legitimate IT system ever asks for passwords via WhatsApp - call ${leaderFirst} directly to verify`, correct: true },
+          { text: `Send your credentials but change your password immediately after`, correct: false },
+          { text: `Wait to see what other staff members do first`, correct: false }
+        ],
+        explanation: `Two red flags here: (1) no IT system legitimately requests passwords via WhatsApp voice message; (2) AI voice cloning can generate a convincing voice message from audio available online. Attackers increasingly target group chats because the social pressure of a group context makes people less likely to question. Call ${leaderFirst} on their personal number to verify before doing anything.`
+      },
+      // Variant 2 - Live phone call during a busy moment
+      {
+        id: 'deepfake-voice', area: 'AI voice cloning',
+        question: `You receive a call that sounds exactly like ${leader} while you're preparing for a busy service. They say they've forgotten the bank login and need you to read it out over the phone urgently. What is the right response?`,
+        email: null,
+        options: [
+          { text: `Read out the details - ${leaderFirst} knows better than to share these unnecessarily`, correct: false },
+          { text: `Say you'll call them back in two minutes on their usual number, then do so to verify`, correct: true },
+          { text: `Give them half the details and ask them to confirm the rest`, correct: false },
+          { text: `Tell them you'll email the details instead`, correct: false }
+        ],
+        explanation: `The busyness of a service day is intentional - attackers time calls to moments when staff are distracted and more likely to comply without thinking. "I'll call you back on your usual number" is always the right response to an unexpected request for sensitive information over the phone - even if the voice is completely convincing. A real ${leaderFirst} will have no problem with that.`
+      }
+    ],
+
+    // ----------------------------------------------------------
+    'reporting': [
+      // Variant 0 - Clicked link and entered credentials
+      {
+        id: 'reporting', area: 'Reporting and response',
+        question: `You realise you clicked a suspicious link 30 minutes ago and may have entered your login details. What should you do first?`,
+        email: null,
+        options: [
+          { text: `Say nothing and hope nothing happens`, correct: false },
+          { text: `Delete the email and change your password when you have time`, correct: false },
+          { text: `Immediately change your password, enable two-factor authentication, and tell your IT contact or ${d.groupName}`, correct: true },
+          { text: `Only report it if you notice unusual activity in the next few days`, correct: false }
+        ],
+        explanation: `Speed is critical. Attackers can act within minutes of receiving stolen credentials. Immediately: (1) change your password on the real system; (2) enable two-factor authentication; (3) tell your IT contact or supervisor - even if you feel embarrassed. Your report could protect others in ${org} who may receive the same attack. There is no shame in being targeted - these attacks are designed by professionals.`
+      },
+      // Variant 1 - Gave bank details over the phone
+      {
+        id: 'reporting', area: 'Reporting and response',
+        question: `You realise you may have given your bank account password to a scammer over the phone an hour ago. What is the most important first step?`,
+        email: null,
+        options: [
+          { text: `Wait and monitor transactions over the next few days`, correct: false },
+          { text: `Call your bank immediately to report the call and ask them to protect the account`, correct: true },
+          { text: `Change your internet banking password and say nothing to anyone else`, correct: false },
+          { text: `Report it to Netsafe before contacting the bank`, correct: false }
+        ],
+        explanation: `Call your bank immediately - use the number on the back of your card or from your statement, not a number from the call. Banks have fraud teams available 24/7 and may be able to freeze the account or stop transactions already in progress. Speed matters enormously. After calling the bank, also report to Netsafe (0508 638 723) and, if money has been lost, to the Police (105).`
+      },
+      // Variant 2 - Uncertainty about whether something was a scam
+      {
+        id: 'reporting', area: 'Reporting and response',
+        question: `You're not sure whether an email you responded to yesterday was a phishing attempt - you didn't click any links, but you did reply with your name and role. Should you report it?`,
+        email: null,
+        options: [
+          { text: `No - you didn't click anything so there's no risk`, correct: false },
+          { text: `Only if you start receiving more suspicious emails`, correct: false },
+          { text: `Yes - even partial information given to a scammer is worth reporting to your IT contact`, correct: true },
+          { text: `No - it's too minor to bother anyone with`, correct: false }
+        ],
+        explanation: `Even "minor" information like your name, role, and the fact that you responded confirms to attackers that your email address is active and monitored - making you a higher-value target for follow-up attacks. Report it to your IT contact so they can monitor for follow-up phishing attempts targeting you or ${org}. When in doubt, report - it's never a waste of time.`
+      }
+    ]
+
+  };
+}
+
+// Build the flat question list using variant tracking
+function getQuestions() {
+  const bank = getQuestionBank();
+  const order = ['sender-spoofing','ai-personalisation','urgency','link-inspection','deepfake-voice','reporting'];
+  return order.map(cat => {
+    const variants = bank[cat];
+    const idx = variantFor(cat) % variants.length;
+    return variants[idx];
+  });
 }
 
 // ============================================================
@@ -1592,10 +1842,33 @@ function showResults() {
 // ============================================================
 // TRAINING CONTENT (denomination-aware)
 // ============================================================
+
+// For training module quizzes, pick a variant that is DIFFERENT
+// from the one used in the assessment for this category.
+// This ensures the training never repeats the exact question
+// the person just answered in the pre-assessment.
+function getTrainingQuiz(cat) {
+  const bank = getQuestionBank();
+  const variants = bank[cat];
+  const usedIdx = variantFor(cat) % variants.length;
+  // Pick the next variant after the one used in the assessment
+  const trainingIdx = (usedIdx + 1) % variants.length;
+  const v = variants[trainingIdx];
+  // Return a simple {q, opts, correct, explanation} quiz object
+  // extracted from the full question variant
+  return {
+    q: v.question,
+    opts: v.options.map(o => o.text),
+    correct: v.options.findIndex(o => o.correct),
+    explanation: v.explanation
+  };
+}
+
 function getTrainingContent(id) {
   const d = state.denom;
   const org = state.orgName;
   const leader = state.leaderName;
+  const leaderFirst = leader.replace(/^(Rev\.?|Bishop|Senior Pastor|Pastor|Superintendent Minister|Minister|Divisional Commander|Conference President|Senior Leader|Elder|Dr\.?)\s+/i,'').split(' ')[0];
   const realDomain = d.domains[0] || 'yourdomain.org.nz';
   const fakeDomain = d.fakeDomains[0] || 'fake-domain.com';
   const fakeDomain2 = d.fakeDomains[1] || 'church-portal.com';
@@ -1605,8 +1878,8 @@ function getTrainingContent(id) {
       steps: [
         {
           heading: 'How attackers fake who they are',
-          body: `Attackers can make emails appear to come from ${leader} or ${org} without any access to the real account. There are two main techniques:\n\n<strong>Display name spoofing:</strong> The name shown ("${leader}") is just text - anyone can set it to anything. The actual sending address is what matters.\n\n<strong>Domain spoofing:</strong> Attackers register domains that look like yours. Examples of fake domains that impersonate <strong>${realDomain}</strong>:\n<ul style="margin:10px 0 10px 20px; color:var(--danger); font-weight:500;"><li>${fakeDomain}</li><li>${fakeDomain2}</li></ul>\nAlways expand the "From" field and read the <em>full</em> email address - not just the display name.`,
-          quiz: { q: `Which of these is a red flag in a sender address?`, opts: [`${d.leaderTitle.split('/')[0].trim().toLowerCase()}@${realDomain}`, `${d.leaderTitle.split('/')[0].trim().toLowerCase()}@${fakeDomain}`, `noreply@${realDomain}`], correct: 1, explanation: `The middle address uses the fake domain <strong>${fakeDomain}</strong> - not the genuine church domain <strong>${realDomain}</strong>. Look at the domain (the part after the @) very carefully.` }
+          body: `Attackers can make emails appear to come from ${leader} or ${org} without any access to the real account. There are two main techniques:\n\n<strong>Display name spoofing:</strong> The name shown ("${leader}") is just text - anyone can set it to anything. The actual sending address is what matters.\n\n<strong>Domain spoofing:</strong> Attackers register domains that look like yours. Examples of fake domains targeting <strong>${realDomain}</strong>:\n<ul style="margin:10px 0 10px 20px; color:var(--danger); font-weight:500;"><li>${fakeDomain}</li><li>${fakeDomain2}</li></ul>\nAlways expand the "From" field and read the <em>full</em> email address - not just the display name.`,
+          quiz: getTrainingQuiz('sender-spoofing')
         },
         {
           heading: 'The gift card and wire transfer scam',
@@ -1620,7 +1893,7 @@ function getTrainingContent(id) {
         {
           heading: 'How AI makes phishing personal',
           body: `Traditional phishing was easy to spot - generic, badly written, addressed to "Dear User". AI has changed this completely.\n\nAI phishing tools can scrape ${org}'s website, Facebook, event listings, and newsletters to build a detailed profile - then write a convincing, personalised email in seconds.\n\nAn attacker could send an email that:\n- Addresses you by name and role\n- Mentions a recent ${org} event\n- References ${leader} by name and title\n- Uses the correct ${d.orgType.toLowerCase()} terminology\n\n...all without ever having been inside your organisation.`,
-          quiz: { q: `An email mentions your name, a recent ${org} event, and ${leader}'s name. Does this personalisation mean the email is genuine?`, opts: [`Yes - they clearly have inside knowledge`, `No - all of this is publicly available and easily scraped by AI`, `Maybe - I should reply to check`], correct: 1, explanation: `Personalisation is no longer proof of legitimacy. AI can gather this information from public sources in seconds. Apply the same scepticism to personalised emails as you would to generic ones.` }
+          quiz: getTrainingQuiz('ai-personalisation')
         },
         {
           heading: 'What to think about before posting publicly',
@@ -1634,7 +1907,7 @@ function getTrainingContent(id) {
         {
           heading: 'Why urgency works - and how to resist it',
           body: `Urgency bypasses careful thinking. When we feel time pressure, we act first and question later. This is exactly what attackers rely on.\n\n<strong>Common urgency tactics used against churches:</strong>\n- "Your account will be suspended in 2 hours"\n- "I'm in a meeting - please act immediately"\n- "This must be done before end of business today"\n- "Don't delay - the ${d.orgType.toLowerCase()} needs this now"\n\n<strong>The antidote is simple:</strong> Treat urgency itself as a red flag. The extra 2 minutes to verify will never cost you more than acting on a scam. Real emergencies always allow time for a 30-second verification call.`,
-          quiz: { q: `An email says ${org}'s bank account will be frozen unless you click a link and verify details in the next hour. What do you do?`, opts: [`Click the link - you can't risk losing access`, `Close the email, ring the bank on their official number, and explain what happened`, `Reply to the email asking for an extension`], correct: 1, explanation: `Manufactured urgency is a hallmark of phishing. Banks never ask you to click links in emails to verify sensitive details. Contact the bank directly using a number you source yourself.` }
+          quiz: getTrainingQuiz('urgency')
         }
       ]
     },
@@ -1642,12 +1915,12 @@ function getTrainingContent(id) {
       steps: [
         {
           heading: 'Reading a URL - what actually matters',
-          body: `Every web address has a structure. The part that matters is the <strong>root domain</strong> - the last two words before the first single forward slash.\n\nExamples:\n- <span style="color:var(--success); font-weight:600;">https://login.${realDomain}/portal</span> → root domain is <strong>${realDomain}</strong> ✓\n- <span style="color:var(--danger); font-weight:600;">https://${fakeDomain2}/verify</span> → root domain is <strong>${fakeDomain2.split('.').slice(-2).join('.')}</strong> ✗\n- <span style="color:var(--danger); font-weight:600;">https://${realDomain}.verify-login.com</span> → root domain is <strong>verify-login.com</strong> ✗\n\nAttackers use free site builders, add misleading subdomains, or register similar-looking domains. Focus on the root domain.`,
-          quiz: { q: `Which of these is a legitimate ${d.label} URL?`, opts: [`https://${fakeDomain2}/login`, `https://portal.${realDomain}/login`, `https://nz-church-login.wixsite.com/verify`], correct: 1, explanation: `The middle URL has root domain <strong>${realDomain}</strong> - a genuine church domain. The others have root domains ${fakeDomain2.split('.').slice(-2).join('.')} and wixsite.com, neither of which are church-owned.` }
+          body: `Every web address has a structure. The part that matters is the <strong>root domain</strong> - the last two parts before the first single forward slash.\n\nExamples:\n- <span style="color:var(--success); font-weight:600;">https://login.${realDomain}/portal</span> \u2192 root domain is <strong>${realDomain}</strong> \u2713\n- <span style="color:var(--danger); font-weight:600;">https://${fakeDomain2}/verify</span> \u2192 root domain is <strong>${fakeDomain2.split('.').slice(-2).join('.')}</strong> \u2717\n- <span style="color:var(--danger); font-weight:600;">https://${realDomain}.verify-login.com</span> \u2192 root domain is <strong>verify-login.com</strong> \u2717\n\nAttackers use free site builders, add misleading subdomains, or register similar-looking domains. Focus on the root domain.`,
+          quiz: getTrainingQuiz('link-inspection')
         },
         {
           heading: 'What to do when you\'re not sure',
-          body: `If a link looks legitimate but you're not 100% certain:\n\n1. <strong>Don't click it.</strong> Open a new browser tab.\n2. <strong>Type the address yourself</strong> - go directly to the known website.\n3. If you don't know the address, search for it via Google - don't use links in emails.\n4. For login pages, always navigate directly to the site rather than following email links.\n\n<strong>Hovering trick:</strong> On a desktop computer, hovering over a link (without clicking) shows the real destination URL in the bottom bar of most email programs and browsers.`,
+          body: `If a link looks legitimate but you're not certain:\n\n1. <strong>Don't click it.</strong> Open a new browser tab.\n2. <strong>Type the address yourself</strong> - go directly to the known website.\n3. If you don't know the address, search for it via Google - don't use links in emails.\n4. For login pages, always navigate directly to the site rather than following email links.\n\n<strong>Hovering trick:</strong> On a desktop computer, hovering over a link (without clicking) shows the real destination URL in the status bar of most email programmes and browsers.`,
           quiz: { q: `You receive an email with a "reset your ${d.systemName} password" link. What's the safest approach?`, opts: [`Click the link - that's what it's for`, `Open your browser, go directly to the login page you know, and use "forgot password" there`, `Reply to ask if the email is legitimate`], correct: 1, explanation: `Going directly to the site yourself is always safer. You know exactly where you are, regardless of what was in the email.` }
         }
       ]
@@ -1656,8 +1929,8 @@ function getTrainingContent(id) {
       steps: [
         {
           heading: 'Voice cloning is real, cheap, and widely used',
-          body: `AI voice cloning tools can replicate a person's voice from as little as 10-30 seconds of audio. For ${d.orgType.toLowerCase()} leaders like ${leader}, that audio is often publicly available:\n\n- Recorded sermons on YouTube or church websites\n- Facebook Live services\n- Radio or podcast interviews\n- Zoom or Teams recordings shared online\n\nAn attacker could clone ${leader.split(' ')[0]}'s voice and call or leave a voicemail asking for an urgent bank transfer. It will sound exactly like them.\n\n<strong>This is already happening to NZ organisations.</strong> It is not a theoretical future threat.`,
-          quiz: { q: `You receive a voicemail that sounds exactly like ${leader}, asking for an urgent transfer. What should you do?`, opts: [`Transfer the funds - you'd recognise their voice`, `Call ${leader.split(' ')[0]} back on their known number before doing anything`, `Email the ${d.groupName} to authorise it`], correct: 1, explanation: `A convincing voice is no longer proof of identity. Always call back on a number you already have - never a number provided in the message.` }
+          body: `AI voice cloning tools can replicate a person's voice from as little as 10-30 seconds of audio. For ${d.orgType.toLowerCase()} leaders like ${leader}, that audio is often publicly available:\n\n- Recorded sermons on YouTube or church websites\n- Facebook Live services\n- Radio or podcast interviews\n- Zoom or Teams recordings shared online\n\nAn attacker could clone ${leaderFirst}'s voice and call or leave a voicemail asking for an urgent bank transfer. It will sound exactly like them.\n\n<strong>This is already happening to NZ organisations.</strong> It is not a theoretical future threat.`,
+          quiz: getTrainingQuiz('deepfake-voice')
         },
         {
           heading: 'Building a verification culture',
@@ -1671,7 +1944,7 @@ function getTrainingContent(id) {
         {
           heading: 'If you\'ve clicked - act immediately',
           body: `If you realise you may have clicked a phishing link or entered your credentials somewhere suspicious:\n\n<strong>Step 1 (right now):</strong> Change your password on the real system immediately.\n\n<strong>Step 2 (right now):</strong> Enable two-factor authentication if it isn't already on.\n\n<strong>Step 3 (within the hour):</strong> Tell your IT contact, ${d.groupName}, or supervisor - even if you feel embarrassed.\n\n<strong>Step 4:</strong> Check for unusual activity - emails sent from your account, data accessed, settings changed.\n\n<strong>Step 5:</strong> If financial details were involved, contact your bank immediately.\n\nAttackers can act within minutes of receiving stolen credentials. Speed is your most important asset.`,
-          quiz: { q: `You clicked a suspicious link 2 hours ago and are now unsure if it was a phishing attempt. What should you do?`, opts: [`Wait to see if anything bad happens`, `Report it now and change your password - early action still limits damage`, `Delete the email and say nothing`], correct: 1, explanation: `It is never too late to report. Changing your password and alerting your IT contact can still limit damage even hours later. Silence only helps the attacker.` }
+          quiz: getTrainingQuiz('reporting')
         },
         {
           heading: 'Reporting is an act of protection, not failure',
